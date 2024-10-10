@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feyiSayo Profile</title>
+    <title>FeyiSayo Profile</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -18,20 +18,45 @@
 <body>
 
 <section id="headergangan" class="inosabi">
-  <header id="tired" class="d-flex flex-wrap justify-content-center py-3 px-4  ">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <img src="./images/box.svg " width="50px" height="30px"  alt="">
-      <span class="fs-4">Feyisayo</span>
-    </a>
 
-    <ul class="nav navbar navbar-expand-lg ">
-      <li class="nav-item "><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-      <li class="nav-item "><a href="#About" class="nav-link">About</a></li>
-      <li class="nav-item "><a href="#service" class="nav-link"> Service</a></li>
-      <li class="nav-item"><a href="#Portfolio" class="nav-link">Portfolio</a></li>
-      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-  </header>
+    <header class="header-container">
+      <div class="logo-text">
+        <a href="#head">
+          <img src="./images/box.svg "   alt="logo" class="logo">
+          <span class="text">Feyisayo</span>
+        </a>
+      </div>
+      
+
+      <button  class="nav-toggle" id="navToggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample">☰</button>
+      <nav class="nav-menu" id="navMenu">
+          <ul >
+            <li><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li><a href="#About" >About</a></li>
+            <li><a href="#service" > Service</a></li>
+            <li><a href="#Portfolio" >Portfolio</a></li>
+            <li ><a href="#contact" >Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+
+        <!-- off canvas strt -->
+        <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body ">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="d-flex flex-column mt-5 gap-4">
+            <p data-bs-dismiss="offcanvas" aria-label="Close"><a href="#">Home</a></p>
+            <p data-bs-dismiss="offcanvas" aria-label="Close"><a href="#About">About</a></p>
+            <p data-bs-dismiss="offcanvas" aria-label="Close"><a href="#service"> Service</a>
+            </p>
+            <p data-bs-dismiss="offcanvas" aria-label="Close"><a href="#Portfolio">Portfolio</a>
+            </p>
+            <p class="text-primary" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#contact">Contact</a></p>
+          </div>
+        </div>
+        <!-- off canvas end -->
 
 </section>
 
@@ -79,8 +104,8 @@
      
 
       <div  class="col">
-        <div  class="row row-cols-1 row-cols-sm-4 ">
-          <div id="Branding" class="col d-flex flex-column  py-4 px-4 mb-1">
+        <div  class="  row row-cols-1 row-cols-sm-4">
+          <div id="Branding" class="col-md-6 col-lg-3 col-sm-12 d-flex flex-column  py-4 px-4 mb-1">
             <div  class="feature-icon-small d-inline-flex  text-bg- bg-gradient  rounded-3 mb-4">
               <img src="./images/camera.svg" height="50px" width="50px" >
             </div>
@@ -88,7 +113,7 @@
             <p class="text-body-secondary">Crafting a compelling brand identity is crucial for standing out in a crowded marketplace. I work closely with you to develop a unique and memorable brand image that resonates with your target audience.</p>
           </div>
 
-          <div class="col d-flex flex-column  py-4 px-4 mb-1">
+          <div class="col-md-6 col-lg-3 col-sm-12 d-flex flex-column  py-4 px-4 mb-1">
             <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg bg-gradient fs-4 rounded-3 mb-4">
               <img src="./images/pencil-square.svg" alt="" height="50px" width="50px">
                 
@@ -97,7 +122,7 @@
             <p class="text-body-secondary">Engaging and persuasive content is key to capturing your audience's attention. I provide expertly crafted content that communicates your brand's message clearly and effectively.</p>
           </div>
 
-          <div class="col d-flex flex-column gap-2 py-4 px-4 mb-1 ">
+          <div class="col-md-6 col-lg-3 col-sm-12 d-flex flex-column gap-2 py-4 px-4 mb-1 ">
             <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg bg-gradient fs-4 rounded-3 mb-4">
               <img src="./images/browser-chrome.svg" alt="" height="50px" width="50px">
                 
@@ -106,7 +131,7 @@
             <p class="text-body-secondary">My design philosophy is centered around creating aesthetically pleasing and intuitive interfaces. I focus on user-centric design principles to ensure your website is not only beautiful but also easy to navigate.</p>
           </div>
 
-          <div  class="col d-flex flex-column gap-2 py-4 px-4 mb-1 ">
+          <div  class="col-md-6 col-lg-3 col-sm-12 d-flex flex-column gap-2 py-4 px-4 mb-1 ">
             <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg bg-gradient fs-4 rounded-3 mb-4">
               <img src="./images/laptop.svg" alt="" height="50px" width="50px">
                 
@@ -297,10 +322,10 @@
       <div  class="container py- ">
         <img  src="./images/profile site.svg" alt="" width="60px">
         <h1 id="testi" id="main" class="text-body-emph">Testimonal</h1>
-        <p id="testi" class="col-lg-8 mx-auto lead">
+        <p id="testi" class="col-lg-8 mx-auto lead"> 
           Working with FEYISAYO was a <code> game-changer </code> for our business. The website they designed not only looks fantastic but has also significantly improved our online engagement. Highly recommend!
         </p>
-        <p id="testi" class="testimonal"> - Kelvin Gallager</p>
+        <p id="testi" class="testimonal"> - Kenny</p>
 
         <img class="mt-4" src="./images/profile site2.svg" alt="" width="50px" >
       </div>
